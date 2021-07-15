@@ -1,0 +1,63 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+#streams {
+    text-align: center;
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-right: -100px;
+}
+
+*::selection{
+    background: none;
+}
+
+#chatbox {
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-left: -100px;
+    background-color: #555555;
+}
+
+#tablist {
+    margin: 0;
+}
+
+ul {
+    padding: 3px 3px 0px 3px;
+}
+
+ul::after {
+    clear: both;
+}
+
+li {
+    list-style: none;
+    /* float: left; 會讓ul沒有高*/
+    display: inline-block;
+    line-height: 1.3;
+    font-size: 100%;
+    padding: 1px;
+    margin: 1px 3px 0px 0px;
+    border: solid 1px black;
+    background-color: #333333;
+    border-radius: 3px;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+#toggleChat {
+    position: absolute;
+    right: 8px;
+    bottom: 8px
+}
+
+#toggleChat:hover {
+    cursor: pointer;
+}

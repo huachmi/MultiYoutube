@@ -1,0 +1,83 @@
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+}
+
+.header {
+    background: #111111;
+    padding: 30px;
+    text-align: center;
+}
+
+.header b {
+    font-size: 60px;
+    color: rgb(243, 44, 44);
+}
+.header i{
+    margin: 5px;
+}
+
+.section {
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+input {
+    margin-bottom: 10px;
+    font-size: 30px;
+    height: 60px;
+    width: 400px;
+}
+input:focus{
+    outline: none;
+    border-color: rgb(0, 217, 255);
+}
+
+.myButton {
+    width: 250px;
+    margin: 10px auto;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(243, 44, 44);
+    border-radius: 3px;
+    box-shadow: 3px 3px 0 #7a0101;
+}
+
+.myButton::selection{
+    background: none;
+}
+.myButton:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 0 #7a0101;
+}
+
+.removeButton {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+}
+
+.footer{
+    text-align: center;
+    background-color: #111111;
+}
+
+/*保持footer在網頁底部*/
+html, body, #wrap {
+    height: 100%;
+}
+body > #wrap {
+    height: auto; 
+    min-height: 100%;
+}
+.section {
+    padding-bottom: 50px; /* 必須使用和footer相同的高度 */
+} 
+.footer {
+    line-height: 50px;
+    margin-top: -50px; /* footer高度的負值 */
+    height: 50px;
+}
